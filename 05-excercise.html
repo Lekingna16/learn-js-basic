@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <button onclick="
+    calculation += '1'">1</button>
+
+
+    <button onclick="
+    calculation += '2'">2</button>
+
+    <button onclick="
+    calculation += '3'">3</button>
+
+    <button onclick="
+    calculation += '+'">+</button>
+
+    <button onclick="
+    calculation += '='
+    convert = calculation.split(/[+ =]/)
+    let result = 0;
+    for (let i = 0; i < convert.length; i++){
+        if (convert[i] !== ''){
+            result = result + parseInt (convert[i])
+        }
+    }
+     
+    console.log(`${calculation} ${result}`)
+    calculation = ''
+    result = 0; 
+    ">=</button>
+
+
+
+    <script>
+        let calculation = "";
+
+        /*
+        Excercise 5.a -> 5.e
+        const name = 'Le Thi Kim Ngan'
+        console.log(`My name is: ${name}`);
+
+        let cost = 5 + 2 * 3 + 9;
+        console.log(`Cost of food: $${cost}`);
+
+        let charges = cost * 0.1
+        console.log(`Charges is: ${charges}`);
+
+        */
+
+
+    </script>
+</body>
+
+</html>
