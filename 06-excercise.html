@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise06</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        let hours = new Date().getHours()
+        let name = 'Le Thi Kim Ngan'
+        let result = ''
+
+        if (hours >= 6 && hours <= 12) {
+            result = 'Good morning! '
+        }
+        else if (hours >= 13 && hours <= 17) {
+            result = 'Good afternoon! '
+        }
+        else {
+            result = 'Good night! '
+        }
+
+        //  console.log(result + name);
+
+
+        let age = 70;
+        let isHoliday = false;
+        if ((!isHoliday) && (age <= 6 || age >= 65)) {
+            console.log("Discount!");
+        }
+        else {
+            console.log("No discount");
+        }
+
+        let randomNumber = Math.random()
+        let resultRamdom = ''
+
+        /*
+
+        cach 1: dung if - else
+        if (randomNumber <= 0.5) {
+            resultRamdom = 'Head'
+        }
+        else resultRamdom = 'Tail'
+
+        const guess = 'Head'
+
+        if (guess === resultRamdom) {
+            console.log("You win!");
+        }
+        else console.log("You lose!");
+
+*/
+
+        let guess = 'Head'
+
+        randomNumber <= 0.5 ? resultRamdom = 'Head' : resultRamdom = 'Tail'
+
+        guess === resultRamdom ? console.log("You win!") : console.log("You lose!")
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
